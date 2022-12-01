@@ -1,0 +1,382 @@
+{
+	"info": {
+		"_postman_id": "79da224f-04e3-42b2-bb08-49b329749196",
+		"name": "PostmanApiCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "StockManagement",
+			"item": [
+				{
+					"name": "Company",
+					"item": [
+						{
+							"name": "localhost:8090/api/v1.0/market/company/register",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXVsIiwiaWF0IjoxNjY5Nzg1ODI2LCJleHAiOjE2Njk3OTE4MjZ9.UrLEsLHzJONRSmtG4HogT_ipTDoiigc5zxNApeH9Wdo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"companyCode\":9,\r\n    \"companyName\":\"abchd\",\r\n    \"companyWebsite\":\"www.abchd.com\",\r\n    \"companyCEO\":\"abchd\",\r\n    \"companyTurnover\":198599000,\r\n    \"stockExchange\":19999990\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8090/api/v1.0/market/company/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"v1.0",
+										"market",
+										"company",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8090/api/v1.0/market/company/getAll",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXVsIiwiaWF0IjoxNjY5Nzg1ODI2LCJleHAiOjE2Njk3OTE4MjZ9.UrLEsLHzJONRSmtG4HogT_ipTDoiigc5zxNApeH9Wdo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8090/api/v1.0/market/company/getAll",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"v1.0",
+										"market",
+										"company",
+										"getAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8090/api/v1.0/market/company/info/2",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXVsIiwiaWF0IjoxNjY5Nzg1ODI2LCJleHAiOjE2Njk3OTE4MjZ9.UrLEsLHzJONRSmtG4HogT_ipTDoiigc5zxNApeH9Wdo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8090/api/v1.0/market/company/info/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"v1.0",
+										"market",
+										"company",
+										"info",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8090/api/v1.0/market/company/delete/1",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXVsIiwiaWF0IjoxNjY5Nzg1ODI2LCJleHAiOjE2Njk3OTE4MjZ9.UrLEsLHzJONRSmtG4HogT_ipTDoiigc5zxNApeH9Wdo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8090/api/v1.0/market/company/delete/7",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"v1.0",
+										"market",
+										"company",
+										"delete",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:8090/api/v1.0/market/company/put",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n    \"companyCode\":4,\r\n    \"companyName\":\"pqrst\",\r\n    \"companyWebsite\":\"www.pqrst.com\",\r\n    \"companyCEO\":\"pqrst\",\r\n    \"companyTurnover\":198599000,\r\n    \"stockExchange\":19999990\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8090/api/v1.0/market/company/put",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"v1.0",
+										"market",
+										"company",
+										"put"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Stock",
+					"item": [
+						{
+							"name": "localhost:8090/api/v1.0/market/stock/add/2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"transactionId\":1,\r\n    \"companyCode_fk\":2,\r\n    \"date\":\"05/03/22\",\r\n    \"stockPrice\":3210987\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8090/api/v1.0/market/stock/add/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8090",
+									"path": [
+										"api",
+										"v1.0",
+										"market",
+										"stock",
+										"add",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "localhost:8090/consumer/getLogin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"username\":\"paul\",\r\n    \"password\":\"paul@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8090/consumer/getLogin",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"consumer",
+								"getLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UserManagement",
+			"item": [
+				{
+					"name": "localhost:8081/auth/v1/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n     \"username\":\"ian\",\r\n    \"password\":\"ian@123\"\r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/auth/v1/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"auth",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8081/auth/v1/user/addUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"username\":\"paul\",\r\n    \"password\":\"paul@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/auth/v1/user/addUser",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"auth",
+								"v1",
+								"user",
+								"addUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8081/api/v1/user/getAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpYW4iLCJpYXQiOjE2Njk3MjI0NzgsImV4cCI6MTY2OTcyODQ3OH0.Kv5WEg1j-0k6sobM9EiM0TlLWdDmvKZO5fNP1w6kZYw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/v1/user/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8081/api/v1/user/getUserById/5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpYW4iLCJpYXQiOjE2Njk3MjI0NzgsImV4cCI6MTY2OTcyODQ3OH0.Kv5WEg1j-0k6sobM9EiM0TlLWdDmvKZO5fNP1w6kZYw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/api/v1/user/getUserById/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"getUserById",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
